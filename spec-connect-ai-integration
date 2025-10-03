@@ -1,0 +1,75 @@
+## 1. Retro
+Prompt Type: one-shot compact instruction prompt
+
+Your Objectives
+
+Comprehension
+
+Fully understand every functional, technical, and UX detail described.
+
+Identify the system’s core purpose and intended value.
+
+Analysis
+
+Break down and reflect step by step on:
+
+All designed capabilities of Orchestra-AI.
+
+Key functional components.
+
+Main workflows and how they interconnect.
+
+Retrospective
+
+Highlight what worked well.
+
+Point out what did not go well.
+
+Provide clear, actionable suggestions for improvement.
+
+## 2. AI-ready instruction prompt
+
+Phase 1 – MVP Scope
+
+Confluence Integration
+
+Use environment variables or encrypted secrets for API tokens.
+
+Add retry logic and error handling for publishing failures.
+
+Provide a preview of published content before final push.
+
+Diagram Generation
+
+Add live Mermaid preview in Streamlit before publishing.
+
+Validate Mermaid syntax and offer auto-fix suggestions.
+
+Template Lifecycle
+
+Introduce template statuses: DRAFT, REVIEWED, PUBLISHED.
+
+Enable rollback and maintain an audit trail for template changes.
+
+Review UX Enhancements
+
+Implement section-level diff tracking.
+
+Allow reviewers to attach comments and regenerate sections based on feedback.
+
+Phase 2 – Post-MVP Rollout
+
+RAG for Technical Spec Generation
+
+Use SBERT embeddings + FAISS for BRD chunk retrieval.
+
+Attach top-K chunks as evidence context for spec generation prompts.
+
+Local AI Models
+
+Transition from Google AI Studio (Phase 1) to local AI model support for more control and scalability.
+
+Additional Requirement
+
+Propose a seamless rollout plan for Phase 2 features after MVP delivery, ensuring minimal disruption and smooth adoption.
+
