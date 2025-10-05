@@ -55,3 +55,27 @@ Task:
 I’m using Visual Studio Code on Windows and I’m a beginner, so please guide me step-by-step and explain each fix clearly.
 
 
+### 3. Claude: Simulated Auto-Fix for Import Error
+Claude, act as a Python automation agent inside my IDE.
+
+Goal: Automatically fix this import error so Orchestra-AI runs correctly.
+
+Error:
+ModuleNotFoundError: No module named 'modules'
+File "C:\\Users\\baloy\\orchestra-ai\\streamlit_app\\pages\\auto_spec.py", line 10, in <module>
+    from modules.auto_spec.orchestrator import get_model_info, list_available_models
+
+Context:
+- The file `orchestrator.py` exists at `orchestra-ai/modules/auto_spec/orchestrator.py`
+- I’m running the app using `streamlit run streamlit_app/main.py`
+- I’m using Visual Studio Code on Windows
+- I want this fixed automatically — generate exact code edits, folder changes, or launch commands I can copy-paste without needing to troubleshoot manually
+
+Your task:
+1. Diagnose the cause of the import error
+2. Automatically generate the fix — either by adjusting the import path or modifying PYTHONPATH
+3. If needed, generate a `.env` file or `.bat` launch script to apply the fix
+4. Confirm when the app should run successfully
+
+Act like you’re inside my IDE and applying the fix directly.
+
