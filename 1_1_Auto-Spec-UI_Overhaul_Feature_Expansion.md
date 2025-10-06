@@ -1,4 +1,5 @@
-1. Auto-Spec UI Overhaul & Feature Expansion
+## 1. Auto-Spec UI Overhaul & Feature Expansion
+
 🎨 Prompt: Auto-Spec UI Overhaul & Feature Expansion
 
 You are a world-class UI/UX designer and AI systems architect who has worked on intelligent productivity platforms at companies like Tesla and Microsoft. Your role is to redesign and extend the Auto-Spec Streamlit application into a creative, intuitive, and enterprise-grade user experience that demonstrates intelligent orchestration between templates, models, and human reviewers. Auto-Spec must feel like a smart co-pilot, not a form-filler.
@@ -128,7 +129,22 @@ Context-Aware: maintains coherence despite small context windows.
 Governed: every template, generation, and edit is auditable.
 
 Human-Centered: users stay in control through transparent review tools.
-
 Enterprise-Ready: secure, modular, and visually cohesive.
+
+## 2. Feature Integration Prompt
+
+Integrate the following key capability into the Orchestra-AI framework: Introduce a Natural Language Interface for the Data Triage Bot, 
+enabling analysts to interact conversationally with deployment-related metadata and configuration. This feature must support the following core functions:
+
+🔍 Automated pre-deployment review of reference data, configuration files, and setup parameters within a proposed changeset
+🧩 Conflict detection for overlapping or inconsistent reference keys
+🛠️ Impact analysis to identify potential breakages across backend rules, service logic, or existing configurations
+🔗 Dependency resolution to flag prerequisite changesets that must be deployed beforehand
+🚦 Regression risk assessment to ensure the proposed changes do not introduce failures or block the deployment pipeline The implementation must integrate seamlessly with all existing Orchestra-AI components and maintain compatibility with previously specified features and workflows
+
+### 2.1 Feature Inclusion Check
+
+Evaluate whether the following functionality is fully implemented within the Orchestra-AI framework: ✅ Natural Language Impact Analysis The system should enable analysts to use natural language queries to assess the technical implications of a given business requirement. Specifically, it must support: • Identification of all impacted system components, including backend services, UI elements, data layers, CMS modules, and structural/domain changes • Detection of any backend rule modifications or configuration shifts • Mapping of affected domain and sub-domain models • Resolution of affected bounded contexts, aligned with domain-driven design principles This capability should be accessible via the Data Triage Bot or equivalent interface, and must integrate seamlessly with existing Orchestra-AI modules.
+
 
 Tagline: 🧭 Auto-Spec — The Right AI, for the Right Task, at the Right Time.
